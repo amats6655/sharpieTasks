@@ -1,0 +1,28 @@
+@page "/tests/PageComponents"
+@* @rendermode InteractiveServer *@
+@inject IToastService ToastService
+@inject NavigationManager NavigationManager
+
+<h3>PageComponents</h3>
+<FluentCard Width="350" Height=@_height.ToString()>
+    <h2>Card<FluentBadge Appearance="Appearance.Neutral">@_numb.Count</FluentBadge></h2>
+
+    <FluentButton Appearance="@Appearance.Accent" @onclick="@(() => ToastService.ShowInfo("Info confirmation."))">Click Me</FluentButton>
+        @foreach (var n in _numb)
+        {
+            <br/>
+            <label>@n</label>
+        }
+</FluentCard>
+
+@code {
+    private readonly List<string> _numb = [];
+    private int _height = 280;
+
+    private void None()
+    {
+        _numb.Add("Click");
+        Console.WriteLine(_numb.Count);
+    }
+    
+}
