@@ -4,7 +4,8 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>sharpieTasksDATA</RootNamespace>
+        <RootNamespace>DATA</RootNamespace>
+        <UserSecretsId>f04bbc2b-f1e2-4c4b-9471-050142ce092e</UserSecretsId>
     </PropertyGroup>
 
 </Project>

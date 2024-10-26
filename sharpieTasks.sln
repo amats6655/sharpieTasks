@@ -1,6 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sharpieTasksAPI", "sharpieTasksAPI\sharpieTasksAPI.csproj", "{5831C3B9-FD93-4ECA-BFB2-88F9E3BBAE05}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sharpieTasks.API", "sharpieTasks.API\sharpieTasks.API.csproj", "{5831C3B9-FD93-4ECA-BFB2-88F9E3BBAE05}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C19D41B6-C6E3-49EE-8AFC-302ACB247D6F} = {C19D41B6-C6E3-49EE-8AFC-302ACB247D6F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sharpieTasks.WEB", "sharpieTasks.WEB\sharpieTasks.WEB.csproj", "{B59205C4-2F17-4905-A00D-8991D055D3DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sharpieTasks.DOM", "sharpieTasks.DOM\sharpieTasks.DOM.csproj", "{1646E9D4-3F27-49B2-A19A-026C37058EA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sharpieTasks.BLL", "sharpieTasks.BLL\sharpieTasks.BLL.csproj", "{C19D41B6-C6E3-49EE-8AFC-302ACB247D6F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1646E9D4-3F27-49B2-A19A-026C37058EA4} = {1646E9D4-3F27-49B2-A19A-026C37058EA4}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sharpieTasks.DATA", "sharpieTasks.DATA\sharpieTasks.DATA.csproj", "{4F63E182-C158-49A2-8894-B9DDEC203077}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1646E9D4-3F27-49B2-A19A-026C37058EA4} = {1646E9D4-3F27-49B2-A19A-026C37058EA4}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +29,21 @@ Global
 		{5831C3B9-FD93-4ECA-BFB2-88F9E3BBAE05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5831C3B9-FD93-4ECA-BFB2-88F9E3BBAE05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5831C3B9-FD93-4ECA-BFB2-88F9E3BBAE05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B59205C4-2F17-4905-A00D-8991D055D3DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B59205C4-2F17-4905-A00D-8991D055D3DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B59205C4-2F17-4905-A00D-8991D055D3DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B59205C4-2F17-4905-A00D-8991D055D3DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1646E9D4-3F27-49B2-A19A-026C37058EA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1646E9D4-3F27-49B2-A19A-026C37058EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1646E9D4-3F27-49B2-A19A-026C37058EA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1646E9D4-3F27-49B2-A19A-026C37058EA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C19D41B6-C6E3-49EE-8AFC-302ACB247D6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C19D41B6-C6E3-49EE-8AFC-302ACB247D6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C19D41B6-C6E3-49EE-8AFC-302ACB247D6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C19D41B6-C6E3-49EE-8AFC-302ACB247D6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F63E182-C158-49A2-8894-B9DDEC203077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F63E182-C158-49A2-8894-B9DDEC203077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F63E182-C158-49A2-8894-B9DDEC203077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F63E182-C158-49A2-8894-B9DDEC203077}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
